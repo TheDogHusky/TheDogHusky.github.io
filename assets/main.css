@@ -15,7 +15,6 @@ body {
     background-image: url("/assets/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 * {
@@ -32,6 +31,7 @@ body {
 }
 
 .title {
+    margin-top: 10%;
     color: var(--primary);
     transition: color 0.3s, text-decoration-color 0.3s;
     font-size: 3rem;
