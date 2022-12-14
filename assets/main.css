@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
+:root {
+    --primary: #bbbbbb;
+    --black: #1d201fff;
+    --blue: #22d5d2ff;
+    --dark-blue: #3777ffff;
+    --last-blue: #7765e3ff;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--black);
+    background-image: url("/assets/bg.svg");
 }
 
 * {
@@ -17,4 +26,31 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.title {
+    color: var(--primary);
+    transition: color 0.3s, text-decoration-color 0.3s;
+    font-size: 3rem;
+    font-weight: 200;
+    cursor: default;
+    user-select: none;
+    text-decoration-color: rgba(255, 255, 255, 0);
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+}
+
+.title:hover {
+    color: var(--blue);
+    text-decoration-color: var(--dark-blue);
+}
+
+.special {
+    font-weight: 600;
+    color: var(--blue);
+    transition: color 0.3s;
+}
+.special:hover {
+    color: var(--dark-blue);
 }
