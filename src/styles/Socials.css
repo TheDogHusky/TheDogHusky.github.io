@@ -1,0 +1,21 @@
+.Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.Socials > a {
+    color: #bbbbbb;
+    font-size: 2rem;
+    transform: scale(1);
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.Socials > a:hover {
+    color: #ffffff;
+    transform: scale(1.12);
+}

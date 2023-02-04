@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    height: 25vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    background-image: url("/public/main-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: default;
+    border-bottom: 5px dashed rgba(55, 119, 255, 0);
+    padding-bottom: 5px;
+}
+
+.App-title:hover {
+    border-bottom-color: rgba(55, 119, 255, 1);
+    color: #22d5d2ff;
+}
+
+.App-title-special {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #22d5d2ff;
+    transition: color 0.2s ease-in-out;
+}
+
+.App-title-special:hover {
+    color: rgba(55, 119, 255, 1);
 }
 
 .App-link {
-  color: #61dafb;
+    color: #9f9f9f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-scroll-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: App-scroll-button-bounce infinite 2s ease-in-out;
+    border-radius: 50%;
+    background-color: #6c6c6c;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.App-scroll-button:active, .App-scroll-button:focus {
+    background-color: #595959;
+}
+
+.App-scroll-button > i {
+    color: #181a1f;
+    font-size: 30px;
+}
+
+@keyframes App-scroll-button-bounce {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
 }
