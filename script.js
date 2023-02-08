@@ -12,9 +12,7 @@ document.addEventListener('rendered', () => {
     }
 
     const elements = document.querySelectorAll('.fade-in-enabled');
-    console.log(elements);
     elements.forEach(el => {
-        console.log(el);
         addObserver(el);
     });
 });
