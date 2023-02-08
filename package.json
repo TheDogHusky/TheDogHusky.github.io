@@ -2,7 +2,7 @@
   "name": "adam-music.me",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://adam-music.me",
+  "homepage": "https://TheDogHusky.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
