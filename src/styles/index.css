@@ -18,3 +18,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.fade-in {
+  animation: fade-in ease 1s;
+  -webkit-animation: fade-in ease 1s;
+  -moz-animation: fade-in ease 1s;
+  -o-animation: fade-in ease 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

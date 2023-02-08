@@ -1,9 +1,15 @@
 import logo from '../assets/logo.webp';
 import '../styles/App.css';
+import * as React from 'react';
 import Content from './Content';
 import Footer from './Footer';
 
 function App() {
+    React.useEffect(() => {
+        const event = new Event('rendered');
+        document.dispatchEvent(event);
+    }, []);
+
     return (
         <div className="App">
             <header className="App-header">

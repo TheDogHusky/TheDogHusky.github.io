@@ -62,7 +62,6 @@
     transform: translateX(-50%);
     margin-bottom: 20px;
     cursor: pointer;
-    animation: App-scroll-button-bounce infinite 2s ease-in-out;
     border-radius: 50%;
     background-color: #6c6c6c;
     width: 40px;
@@ -88,5 +87,25 @@
     }
     100% {
         transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes App-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-link, .App-title, .App-logo {
+        animation: App-appear 0.5s ease-in-out;
+    }
+    .App-scroll-button {
+        animation: App-scroll-button-bounce infinite 2s ease-in-out;
     }
 }
