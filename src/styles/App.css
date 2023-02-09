@@ -109,3 +109,12 @@
         animation: App-scroll-button-bounce infinite 2s ease-in-out;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .App-title {
+        font-size: 3rem;
+    }
+    .App-title-special {
+        font-size: 3rem;
+    }
+}
