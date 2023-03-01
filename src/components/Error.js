@@ -10,7 +10,7 @@ function Error() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1 className="App-title">Oops! Page not found!</h1>
+                    <h1 className="App-title"><span className="App-title-special">Oops!</span> Page not found!</h1>
                     <h2 className="Error-message">The requested content or ressource could not be found.</h2>
                     <h3 className="Error-paragraph">If you think this is an unexpected error, please report it to me!</h3>
                     <a className="Button Button-error" href="/">Go back Home</a>
@@ -22,7 +22,7 @@ function Error() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1 className="App-title">Oops! An error occured!</h1>
+                <h1 className="App-title"><span className="App-title-special">Oops!</span> An error occured!</h1>
                 <h2 className="Error-message">Error: {error.error.message}</h2>
                 <h2 className="Error-status">Status: <span className="Error-status-number">{error.status}</span></h2>
                 <h3 className="Error-paragraph">If you think this is an unexpected error, please report it to me!</h3>
