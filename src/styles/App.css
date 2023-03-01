@@ -67,6 +67,7 @@
     width: 40px;
     height: 40px;
     transition: background-color 0.2s ease-in-out;
+    border-style: none;
 }
 
 .App-scroll-button:active, .App-scroll-button:focus {
