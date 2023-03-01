@@ -3,8 +3,11 @@ import "../styles/Socials.css";
 
 class Socials extends React.Component {
     render() {
+        let className = "Socials";
+        if(this.props.place === "headers") className += " Headers fie";
+
         return (
-        <div className="Socials">
+        <div className={className}>
             <a href="https://www.twitter.com/ClassyCraft3r" target="_blank" title="Twitter" rel="noreferrer">
                 <i className="bi bi-twitter"></i>
             </a>

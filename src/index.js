@@ -4,17 +4,21 @@ import './styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactRouter from 'react-router-dom';
+import Error from './components/Error';
 
 const router = ReactRouter.createBrowserRouter([
     {
         path: '/',
-        element: <App route="index" />
+        element: <App route="index" />,
+        errorElement: <Error />
     }, {
         path: '/about',
-        element: <App route="about" />
+        element: <App route="about" />,
+        errorElement: <Error />
     }, {
         path: '/contact',
-        element: <App route="contact" />
+        element: <App route="contact" />,
+        errorElement: <Error />
     }
 ]);
 

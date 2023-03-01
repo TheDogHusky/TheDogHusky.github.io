@@ -20,3 +20,11 @@
     transform: scale(1.12);
     border-color: #bbbbbb;
 }
+
+.Headers {
+    margin-top: -30px;
+}
+
+.Headers > a {
+    font-size: 3.5rem;
+}
