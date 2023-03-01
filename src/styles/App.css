@@ -67,6 +67,7 @@
     width: 40px;
     height: 40px;
     transition: background-color 0.2s ease-in-out;
+    border-style: none;
 }
 
 .App-scroll-button:active, .App-scroll-button:focus {
@@ -117,4 +118,68 @@
     .App-title-special {
         font-size: 3rem;
     }
+}
+
+.Button {
+    --btn-bg: transparent;
+    --btn-color: #fff;
+    --btn-border: #fff;
+    --btn-hover-bg: #fff;
+    --btn-hover-color: #000;
+
+    background-color: transparent;
+    color: var(--btn-color);
+    border: 2px dashed var(--btn-border);
+    border-radius: 0px;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.Button:hover {
+    background-color: var(--btn-bg);
+    color: var(--btn-hover-color);
+}
+
+.Button-primary {
+    --btn-bg: #22d5d2ff;
+    --btn-color: #22d5d2ff;
+    --btn-border: #22d5d2ff;
+    --btn-hover-color: #000000;
+}
+
+.Button-secondary {
+    --btn-bg: rgba(55, 119, 255, 1);
+    --btn-color: rgba(55, 119, 255, 1);
+    --btn-border: rgba(55, 119, 255, 1);
+    --btn-hover-color: #ffffff;
+}
+
+.Button-error {
+    --btn-bg: #ef4242;
+    --btn-color: #ef4242;
+    --btn-border: #ef4242;
+    --btn-hover-color: #ffffff;
+}
+
+.Button-warning {
+    --btn-bg: #f9a826;
+    --btn-color: #f9a826;
+    --btn-border: #f9a826;
+    --btn-hover-color: #000000;
+}
+
+.Button-success {
+    --btn-bg: #61b947;
+    --btn-color: #61b947;
+    --btn-border: #61b947;
+    --btn-hover-color: #000000;
+}
+
+.Button-info {
+    --btn-bg: #22d5d2ff;
+    --btn-color: #22d5d2ff;
+    --btn-border: #22d5d2ff;
+    --btn-hover-color: #000000;
 }

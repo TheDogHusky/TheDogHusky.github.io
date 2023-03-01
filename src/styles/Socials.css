@@ -12,10 +12,19 @@
     color: #bbbbbb;
     font-size: 2rem;
     transform: scale(1);
-    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .Socials > a:hover {
     color: #ffffff;
     transform: scale(1.12);
+    border-color: #bbbbbb;
+}
+
+.Headers {
+    margin-top: -30px;
+}
+
+.Headers > a {
+    font-size: 3.5rem;
 }

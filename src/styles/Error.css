@@ -1,0 +1,25 @@
+.Error-message {
+    color: #ef4242;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.Error-paragraph {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -35px;
+    color: #cba1a1;
+}
+
+.Error-status {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: -35px;
+    font-style: italic;
+    color: #707070;
+}
+
+.Error-status-number {
+    color: #ef4242;
+}
