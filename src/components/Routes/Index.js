@@ -5,6 +5,7 @@ import Content from '../Content';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 import Socials from "../Socials";
+import { HashLink } from 'react-router-hash-link';
 
 function Index() {
     React.useEffect(() => {
@@ -19,7 +20,7 @@ function Index() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <h1 className="App-title"><span className="App-title-special">Adam Billard</span>, young musician.</h1>
                 <Socials place="headers" />
-                <a className="App-scroll-button" href="#scroll" title="Scroll"><i className="bi bi-chevron-down"></i></a>
+                <HashLink className="App-scroll-button" to="#scroll"><i className="bi bi-chevron-down"></i></HashLink>
             </header>
             <Content />
             <Footer />

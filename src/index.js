@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import * as ReactRouter from 'react-router-dom';
 import Error from './components/Error';
 
-const router = ReactRouter.createBrowserRouter([
+const router = ReactRouter.createHashRouter([
     {
         path: '/',
         element: <App route="index" />,
