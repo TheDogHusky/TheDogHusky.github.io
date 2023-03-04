@@ -53,3 +53,68 @@
     width: 3rem;
     border-radius: 50%;
 }
+
+.Navbar-appear-button {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.Nav-active {
+    min-height: 24rem;
+}
+
+/* Make the navbar responsive */
+
+@keyframes Navbar-slidein {
+    from {
+        transform: translateY(-10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+        flex-flow: column wrap;
+        height: 12rem;
+        padding: 1rem 0;
+    }
+
+    .Nav-separator + .Nav-separator {
+        border-top-width: 2px;
+        border-top-style: dotted;
+        border-top-color: rgba(55, 119, 255, 1);
+        padding-top: 20px;
+        width: 50%;
+    }
+
+    .Nav-separator:first-of-type {
+        padding-bottom: 10px;
+    }
+
+    .Navbar-headers {
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .Navbar-items {
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        display: none;
+        animation: Navbar-slidein 0.5s ease-in-out;
+    }
+
+    .Navbar-appear-button {
+        display: block;
+    }
+}
