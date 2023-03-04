@@ -28,3 +28,26 @@
 .Headers > a {
     font-size: 3.5rem;
 }
+
+.Headers > span {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .Headers > a {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Headers > a {
+        font-size: 2rem;
+    }
+
+    .Headers > a > span {
+        font-size: 1rem;
+        margin-top: -8px;
+        display: block;
+        font-style: italic;
+    }
+}
