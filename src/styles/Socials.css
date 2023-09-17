@@ -33,9 +33,21 @@
     font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .Headers > a {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .Headers > a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .Headers > a {
+        font-size: 1.5rem;
     }
 }
 

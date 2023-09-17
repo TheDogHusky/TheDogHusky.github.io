@@ -20,10 +20,10 @@ class Socials extends React.Component {
             <a href="https://discord.gg/d7dFSBcumt" target="_blank" title="Discord" rel="noreferrer">
                 <i className="bi bi-discord"></i>
             </a>
-            <a href="mailto:contact@classy.works" target="_blank" title="Contact" rel="noreferrer">
+            <a href="mailto:contact@classydev.fr" target="_blank" title="Contact" rel="noreferrer">
                 <i className="bi bi-envelope-fill"></i>
             </a>
-            <a href="https://classy.works" target="_blank" title="Links" rel="noreferrer">
+            <a href="https://classydev.fr" target="_blank" title="Links" rel="noreferrer">
                 <i className="bi bi-link-45deg"></i>
             </a>
         </div>

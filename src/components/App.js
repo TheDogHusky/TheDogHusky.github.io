@@ -3,6 +3,7 @@ import * as React from 'react';
 import Index from './Routes/Index';
 import About from './Routes/About';
 import Contact from './Routes/Contact';
+import Songs from './Routes/Songs';
 
 function App(props) {
     React.useEffect(() => {
@@ -17,6 +18,8 @@ function App(props) {
             return <About />
         case 'contact':
             return <Contact />
+        case 'songs':
+            return <Songs />
         default:
             return <Index />
     }

@@ -18,6 +18,10 @@ const router = ReactRouter.createHashRouter([
         path: '/contact',
         element: <App route="contact" />,
         errorElement: <Error />
+    }, {
+        path: '/songs',
+        element: <App route="songs" />,
+        errorElement: <Error />
     }
 ]);
 

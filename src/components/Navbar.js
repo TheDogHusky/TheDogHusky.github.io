@@ -66,6 +66,7 @@ class Navbar extends React.Component {
             <li className="Navbar-item"><a href="/#/" className="Navbar-link">Home</a></li>
             <li className="Navbar-item"><a href="/#/about" className="Navbar-link">About</a></li>
             <li className="Navbar-item"><a href="/#/contact" className="Navbar-link">Contact</a></li>
+            <li className="Navbar-item"><a href="/#/songs" className="Navbar-link">Songs</a></li>
         </ul>;
         elems.push(navItems);
         window.addEventListener('resize', this.updateDisplay.bind(this));

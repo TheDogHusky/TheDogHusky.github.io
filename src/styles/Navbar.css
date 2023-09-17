@@ -64,7 +64,7 @@
 }
 
 .Nav-active {
-    min-height: 24rem;
+    min-height: 26rem;
 }
 
 /* Make the navbar responsive */
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 768px) {
     .Navbar {
-        flex-flow: column wrap;
+        flex-flow: column;
         height: 12rem;
         padding: 1rem 0;
     }
