@@ -3,7 +3,7 @@ import "../styles/Socials.css";
 
 class Socials extends React.Component {
     render() {
-        let className = "Socials";
+        let className = "Socials fie";
         if(this.props.place === "headers") className += " Headers fie";
 
         return (

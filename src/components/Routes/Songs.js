@@ -2,7 +2,7 @@ import '../../styles/App.css';
 import '../../styles/Songs.css';
 import * as React from 'react';
 import Navbar from "../Navbar";
-import ContactSocials from "../ContactSocials";
+import PlatformSocials from "../PlatformSocials";
 import Footer from "../Footer";
 
 function Contact() {
@@ -11,7 +11,7 @@ function Contact() {
             <Navbar />
             <header className="App-header">
                 <h1 className="App-title">My Songs</h1>
-                <ContactSocials place="headers" />
+                <PlatformSocials />
             </header>
             <div className="Song-list">
                 <div className="Song">

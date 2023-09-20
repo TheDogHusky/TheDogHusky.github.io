@@ -12,11 +12,13 @@
 
 .About-me {
     max-width: 600px;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
     .About-me {
         max-width: 80%;
+        font-size: 1.2rem;
     }
 }
 

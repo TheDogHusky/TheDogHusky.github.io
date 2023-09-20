@@ -21,6 +21,14 @@
     border-color: #bbbbbb;
 }
 
+.Socials.Platform-socials {
+    margin-top: 0;
+    gap: 40px;
+}
+.Socials.Platform-socials > a {
+    font-size: 3rem;
+}
+
 .Headers {
     margin-top: -30px;
 }
@@ -32,6 +40,33 @@
 .Headers > span {
     font-style: italic;
 }
+
+
+.Spotify-social:hover {
+    color: #1db954 !important;
+    border-color: #1db954 !important;
+}
+
+.YouTube-music-social:hover {
+    color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.Apple-music-social:hover {
+    color: #ff2d55 !important;
+    border-color: #ff2d55 !important;
+}
+
+.Amazon-music-social:hover {
+    color: #25D1DA !important;
+    border-color: #25D1DA !important;
+}
+
+.Deezer-social:hover {
+    color: #000000 !important;
+    border-color: #000000 !important;
+}
+
 
 @media screen and (max-width: 1024px) {
     .Headers > a {
@@ -54,6 +89,10 @@
 @media screen and (max-width: 400px) {
     .Headers > a {
         font-size: 2rem;
+    }
+
+    .Socials.Platform-socials > a {
+        font-size: 2.2rem;
     }
 
     .Headers > a > span {

@@ -2,17 +2,23 @@
     background-color: rgba(0, 0, 0, 0.84);
     color: #fff;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
-    height: 4rem;
+    padding: 1rem;
+    height: fit-content;
 }
 
 .Navbar-headers {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     justify-content: flex-start;
+}
+
+.Navbar-content-collapse {
+    height: 48px;
 }
 
 .Navbar-items {
@@ -21,7 +27,9 @@
     gap: 2.5rem;
     justify-content: flex-end;
     list-style-type: none;
-    margin-right: 5rem;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 1rem 0 0;
 }
 
 .Navbar-item {
@@ -30,6 +38,7 @@
     transition: color 0.2s ease-in-out;
     cursor: pointer;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .Navbar-item:hover {
@@ -54,67 +63,114 @@
     border-radius: 50%;
 }
 
-.Navbar-appear-button {
+.Navbar-menu {
     display: none;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
     background-color: transparent;
     border: none;
 }
 
-.Nav-active {
-    min-height: 26rem;
+.Navbar-menu-btn {
+    display: none;
+    height: 32px;
+    width: 32px;
+    top: 8px;
+    position: relative;
+    cursor: pointer;
 }
 
-/* Make the navbar responsive */
+.Navbar-menu-btn > * {
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: rgba(55, 119, 255, 1);
+    position: absolute;
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.25s ease, top 0.5s ease, background-color 0.5s ease;
+}
 
-@keyframes Navbar-slidein {
-    from {
-        transform: translateY(-10%);
-    }
-    to {
-        transform: translateY(0);
-    }
+.Navbar-menu-btn.active > * {
+    background-color: #22d5d2ff;
+}
+
+.Navbar-menu-btn > span:nth-of-type(1) {
+    top: 0;
+}
+
+.Navbar-menu-btn > span:nth-of-type(2) {
+    top: 8px;
+}
+
+.Navbar-menu-btn > span:nth-of-type(3) {
+    top: 16px;
+}
+
+.Navbar-menu-btn.active > span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.Navbar-menu-btn.active > span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.Navbar-menu-btn.active > span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 8px;
 }
 
 @media screen and (max-width: 768px) {
     .Navbar {
-        flex-flow: column;
-        height: 12rem;
-        padding: 1rem 0;
+        min-height: 4rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+        height: fit-content;
     }
 
-    .Nav-separator + .Nav-separator {
-        border-top-width: 2px;
-        border-top-style: dotted;
-        border-top-color: rgba(55, 119, 255, 1);
-        padding-top: 20px;
-        width: 50%;
+    .Navbar-menu {
+        display: block;
     }
 
-    .Nav-separator:first-of-type {
-        padding-bottom: 10px;
+    .Navbar-menu-btn {
+        display: block;
     }
 
-    .Navbar-headers {
-        flex-direction: column;
-        gap: 1.5rem;
-        justify-content: center;
+    .Navbar-content-collapse {
+        display: block;
+        visibility: hidden;
+        max-height: 0;
+        height: fit-content;
+        margin-top: 0;
+        transition: max-height 0.5s ease, visibility 0.5s ease, margin-top 0.5s ease;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .Navbar-content-collapse:before {
+        /* Make a separator on top of it */
+        content: "";
+        position: absolute;
+        top: .5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 75%;
+        border-top: 2px dashed rgba(55, 119, 255, 1);
+    }
+
+    .Navbar-content-collapse.active {
+        visibility: visible;
+        max-height: 16rem;
     }
 
     .Navbar-items {
         flex-direction: column;
-        gap: 1.5rem;
-        justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0;
-        display: none;
-        animation: Navbar-slidein 0.5s ease-in-out;
-    }
-
-    .Navbar-appear-button {
-        display: block;
+        justify-content: flex-start;
+        padding: 1rem 0;
+        gap: 2rem;
+        margin: 0 auto;
     }
 }
