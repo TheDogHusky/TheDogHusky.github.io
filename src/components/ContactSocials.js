@@ -12,7 +12,7 @@ class Socials extends React.Component {
                     <i className="bi bi-twitter"></i>
                     <span> Twitter</span>
                 </a>
-                <a href="https://www.instagram.com/classy.craft3r/" target="_blank" title="Instagram" rel="noreferrer">
+                <a href="https://www.instagram.com/adambillardmusic/" target="_blank" title="Instagram" rel="noreferrer">
                     <i className="bi bi-instagram"></i>
                     <span> Instagram</span>
                 </a>
